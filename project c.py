@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 
+
 # ==========================================
 # MODERN COLOR PALETTE & STYLES
 # ==========================================
@@ -12,6 +13,7 @@ TEXT_LIGHT = "#7F8C8D"      # Muted gray for secondary text
 THEME_BLUE = "#2980B9"      # Corporate Header Blue
 TERM_BG = "#1E272E"         # Dark Terminal Background
 TERM_FG = "#00D2D3"         # Bright Cyan Terminal Text
+
 
 # Button Colors (Normal / Hover)
 BTN_CALC = ("#27AE60", "#2ECC71")   # Emerald Green
@@ -114,10 +116,10 @@ def create_hover_button(parent, text, cmd, colors):
 # MAIN GUI WINDOW SETUP
 # ==========================================
 root = tk.Tk()
-root.title("Sierra Leone SME Tracker")
+root.title("Sierra Leone SALES Tracker")
 root.geometry("650x700")
 root.configure(bg=BG_APP)
-root.resizable(False, False)
+root.resizable(True, True)
 
 # --- HEADER BANNER ---
 header_frame = tk.Frame(root, bg=THEME_BLUE, height=70)
